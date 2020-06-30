@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+     
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body >
+	
+	<div class="header__bg-title" id='header__bg-title-scene'>
+      	<img data-depth="0.6" src="css/img/paral.png" alt="Фон с частицами">  	
+
+    </div>
+    <div class="header__bg-title" id='header__bg-particles-scene'>
+     	<img data-depth="2" src="css/img/paral2.png" alt="Фон с частицами">
+    </div>
+	<header>
+		<div class="logo"><img src="css/img/logo.png"></div>
+		<div class="number_tel"><img src="css/img/icon.png"></div>
+		<div class="time_work"><img src="css/img/icon2.png"></div>
+		
+		<div class="adress">Мы находимся в центре:<br>г.Брест ул.Гоголя д.65 </p></div>
+		<div class="charac"><p>Студия депиляции и<br> массажный кабинет<br> в Бресте</p></div>
+
+			<div class="map"><img src="css/img/map.png" ></div>			
+			<div class="poster"><a>СМОТРЕТЬ НА КАРТЕ</a>
+				<div class="descr">				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.251504897087!2d23.696079115478327!3d52.093354179735734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bfa0846eda1%3A0x9d8826f6a26a2b91!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDY1LCDQkdGA0LXRgdGC!5e0!3m2!1sru!2sby!4v1593430084800!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">					
+				</iframe>
+				</div>
+
+			</div>
+		</a>
+		<ul class="nav">	
+			<li><a  href="#"><strong>Главная</strong></a></li>
+			<li><a  href="#">Шугаринг и депеляция воском</a></li>
+			<li><a  href="#">Антицеллюлитный массаж</a></li>
+			<li><a  href="#">Классический массаж</a></li>
+			<li><a  href="#">Обучение</a></li>
+			<li><a  href="#">Косметика для мастеров</a></li>
+			<li><a  href="#">Статьи</a></li>
+			<li><a  href="#">О студии</a></li>
+			<li><a  href="#">Контакты</a></li>
+		</ul>	
+	</header>
+	<div class="container"><img  src="css/img/info.png">
+		<div class="description"><img src="css/img/px.png"></div>
+	</div>
+	<div class="regist"><button ><a href="javascript:PopUpShow()"><img src="css/img/regist.png"></a></button></div>
+	
+		<p class="pich">Хотите избавиться от<br><strong> нежелательных волос</strong><br> или нужен сеанс<br><strong> антицеллюлитного массажа?</strong></p>		
+		<div class="prise"><img src="css/img/prise.png"></div>	
+	
+	
+		<div class="bran"><img src="css/img/Branch.png"></div>
+		<div class="but"><button><a href="javascript:PopUpShow()"><img src="css/img/button.png"></a></button></div>
+	
+	
+	<div class="b-popup" id="popup1">
+	    <div class="b-popup-content">	    	
+	    <a href="javascript:PopUpHide()"><div class="accept"><button><a href="javascript:PopShow()"><img src="css/img/pop-up/buttom.png"></a></button></div></a>	    	     
+	    <a href="javascript:PopUpHide()">X</a>
+	    </div>
+	    <form method="#" id="form">
+	    	<select>
+	    		<option>Повышение квалификации массаж</option>
+	    		<option>Повышение квалификации спа</option>
+	    		<option>Повышение квалификации по жизни</option>
+	    	</select>
+	    	<input id="nam"  type="text" accept="form" placeholder="Ваше Имя" >
+	    	<input id="numb" type="text" accept="form" placeholder="Ваш номер телефона">
+	    </form>
+	    
+	</div>
+
+	<div class="accept" id="pop">
+	    <div class="b-popup-content">	    	
+	    <img src="css/img/pop-up/accept.png"></div>	    	     
+	    <a href="javascript:PopHide()">X</a>
+	</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+           
+        PopUpHide();
+    });
+    
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+
+</script>
+<script>
+    $(document).ready(function(){
+           
+        PopHide();
+    });
+    
+    function PopShow(){
+        $("#pop").show();
+    }
+    
+    function PopHide(){
+        $("#pop").hide();
+    }
+    
+</script>
+    <script>
+	    let headerBgTitle = document.getElementById('header__bg-title-scene');
+	    	
+	    let headerBgParticles = document.getElementById('header__bg-particles-scene');
+	    
+	 
+	    let headerBgTitleInstance = new Parallax(headerBgTitle);
+	    let headerBgParticlesleInstance = new Parallax(headerBgParticles);
+	</script>	
